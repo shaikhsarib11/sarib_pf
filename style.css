@@ -153,15 +153,22 @@ nav ul li a:hover {
     color: var(--sky);
     border-radius: 5px;
 }*/
-.home-image img {
+
+.home-image img{
     width: 180px;      /* Image width */
     height: 180px;     /* Image height */
     object-fit: cover; /* Image crop adjust */
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--sky);
+    border-radius: 100px;
+    box-shadow: 0 0 15px var(--text);
+    display: flex;
+    flex-direction: column;   /* Items को ऊपर–नीचे रखता है */
+    justify-content: center;  /* Vertically center */
+    align-items: center;      /* Horizontally center */
+    
+
+    
 }
-
-
+    
 .glow {
     box-shadow: 0 0 12px var(--sky);
 }
@@ -195,7 +202,7 @@ nav ul li a:hover {
 
 .project-card {
     width: 300px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(170, 172, 173, 0.05);
     padding: 15px;
     border-radius: 10px;
     transition: 0.3s;

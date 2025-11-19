@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #6b76e2, #0e0d0d, #585006, #001f54);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
 
     <!-- Background Particles -->
     <canvas id="particles"></canvas>
@@ -31,7 +47,7 @@
     <section id="home" class="section home">
         <div class="home-content">
             <h1>Welcome to my portfolio!</h1>
-            <h2>I'm <span class="name">Shaikh Sarib</span></h2>
+            <h2>I'm <span class="name">Shaikh Sarib software developer</span></h2>
 
             <div class="typing-text">
                 <span id="typing"></span><span class="cursor">|</span>
@@ -40,8 +56,12 @@
             <div class="social-icons">
                 <a href="#"><img src="https://img.icons8.com/?size=80&id=12599&format=png" alt="GitHub"></a>
                 <a href="#"><img src="https://img.icons8.com/?size=80&id=13930&format=png" alt="LinkedIn"></a>
-                <a href="#"><img src="https://img.icons8.com/?size=80&id=2R0N5S5zwFfA&format=png" alt="Email"></a>
+                <!--<a href="#"><img src="https://img.icons8.com/?size=80&id=2R0N5S5zwFfA&format=png" alt="Email"></a>
                 <a href="#" class="resume">Resume</a>
+                <a href="mailto:your-email@example.com">
+    <i class="fa-solid fa-envelope"></i>-->
+</a>
+
             </div>
         </div>
 
@@ -117,6 +137,7 @@
                     <a href="#" class="btn">View Live</a>
                     <a href="#" class="btn">Source Code</a>
                 </div>
+
             </div>
 
         </div>
