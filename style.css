@@ -159,7 +159,7 @@ nav ul li a:hover {
     height: 180px;     /* Image height */
     object-fit: cover; /* Image crop adjust */
     border-radius: 100px;
-    box-shadow: 0 0 15px var(--text);
+    box-shadow: 0 0 20px var(--text);
     display: flex;
     flex-direction: column;   /* Items को ऊपर–नीचे रखता है */
     justify-content: center;  /* Vertically center */
