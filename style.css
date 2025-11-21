@@ -127,7 +127,7 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-.resume {
+s.resume {
     padding: 10px 18px;
     border: 1px solid var(--sky);
     color: var(--sky);
