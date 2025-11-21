@@ -3,38 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaikh Sarib - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <title>Shaikh Sarib | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+     <style>
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #6b76e2, #0e0d0d, #585006, #001f54);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
 
-    <div class="hero-section">
-        <div class="background-overlay"></div>
-        
-        <header class="header-content">
-            <div class="profile-pic-container">
-                <img src="YOUR_IMAGE_URL.jpg" alt="Shaikh Sarib" class="profile-pic">
-                <p class="small-text">Your Image Here</p>
-            </div>
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+     </style>
 
+    <!-- Background Particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">🌙</div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2 class="logo">Sarib</h2>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section home">
+        <div class="home-content">
             <h1>Welcome to my portfolio!</h1>
-            <p class="subtitle">I'm *Shaikh Sarib* software developer</p>
-            
-            <div class="social-links">
-                <a href="#" class="social-icon">in</a>
-                <a href="#" class="social-icon">github</a>
+            <h2>I'm <span class="name">Shaikh Sarib software developer</span></h2>
+
+            <div class="typing-text">
+                <span id="typing"></span><span class="cursor">|</span>
             </div>
-        </header>
 
-        <main class="main-content">
-            <section class="about-me">
-                <h2>About Me</h2>
-                <div class="about-text-box">
-                    <p>Hi, I'm *Shaikh Sarib*, a passionate software developer who loves creating modern, clean, and high performance digital experiences. I focus on building interactive and visually appealing interfaces with smooth animations, responsive layouts, and elegant functionality.</p>
-                    <p>With a strong interest in UI/UX, creative coding, and full stack development, I enjoy turning ideas into well crafted websites and applications. I'm always learning new technologies and improving my ability to deliver better results.</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://img.icons8.com/?size=80&id=12599&format=png" alt="GitHub"></a>
+                <a href="#"><img src="https://img.icons8.com/?size=80&id=13930&format=png" alt="LinkedIn"></a>
+                <!--<a href="#"><img src="https://img.icons8.com/?size=80&id=2R0N5S5zwFfA&format=png" alt="Email"></a>
+                <a href="#" class="resume">Resume</a>
+                <a href="mailto:your-email@example.com">
+    <i class="fa-solid fa-envelope"></i>-->
+</a>
+
+            </div>
+        </div>
+
+        <div class="home-image">
+            <img src="./images/img1.jpg">
+            <div class="img-placeholder">Your Image Here</div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h1 class="section-title">About Me</h1>
+
+        <div class="about-content">
+            <div class="about-img glow">
+                <div class="img-placeholder">Your Image Here</div>
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Hi, I’m <b>Shaikh Sarib</b>, a passionate software developer who loves creating modern,
+                    clean, and high-performance digital experiences. I focus on building interactive and visually appealing
+                    interfaces with smooth animations, responsive layouts, and smart functionality.
+                </p>
+                <p>
+                    With a strong interest in UI/UX, creative coding, and full-stack development, I enjoy turning ideas into
+                    well-crafted websites and applications. I’m always learning new technologies and improving my skills 
+                    to deliver better results.
+                </p>
+
+                <div class="skills">
+                    <div class="skill glow">HTML</div>
+                    <div class="skill glow">CSS</div>
+                    <div class="skill glow">JavaScript</div>
+                    <div class="skill glow">React</div>
+                    <div class="skill glow">Node.js</div>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h1 class="section-title">Projects</h1>
+
+        <div class="project-container">
+
+            <div class="project-card glow">
+                <img src="https://via.placeholder.com/300x180" alt="">
+                <h3>Interactive Portfolio Website</h3>
+                <p>A sleek, animated personal portfolio with dark/light mode and smooth interactions.</p>
+                <div class="btn-box">
+                    <a href="#" class="btn">View Live</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card glow">
+                <img src="https://via.placeholder.com/300x180" alt="">
+                <h3>Task Manager Web App</h3>
+                <p>A task management tool with an intuitive UI and real-time updates.</p>
+                <div class="btn-box">
+                    <a href="#" class="btn">View Live</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card glow">
+                <img src="https://via.placeholder.com/300x180" alt="">
+                <h3>Creative Landing Page</h3>
+                <p>A visually striking landing page with glowing UI elements and click animations.</p>
+                <div class="btn-box">
+                    <a href="#" class="btn">View Live</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h1 class="section-title">Contact Me</h1>
+
+        <div class="contact-box">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button class="send-btn">Send Message</button>
+        </div>
+
+        <div class="social-icons footer-icons">
+            <a href="#"><img src="https://img.icons8.com/?size=80&id=12599&format=png" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/?size=80&id=13930&format=png" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/?size=80&id=2R0N5S5zwFfA&format=png" alt=""></a>
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
